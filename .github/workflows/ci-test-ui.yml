@@ -1,16 +1,17 @@
-name: Playwright Tests UI
+name: Playwright UI Tests
 
 on:
   workflow_dispatch:
     inputs:
       testPath:
-        description: 'Directory or file to run tests from'
-        required: true
+        description: 'Directory or file path to run Playwright tests from'
+        required: false
         default: 'tests/ui-cases'
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -20,6 +21,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Debug current working directory
+        run: pwd && ls -R
+
       - name: Install dependencies
         run: npm ci
 
@@ -27,7 +31,9 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test ${{ github.event.inputs.testPath }}
+        run: |
+          echo "Running tests from path: ${{ github.event.inputs.testPath }}"
+          npx playwright test "${{ github.event.inputs.testPath }}"
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
