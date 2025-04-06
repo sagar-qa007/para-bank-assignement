@@ -1,0 +1,19 @@
+{
+    "postId": 25,
+    "createPayload": {
+      "title": "Automated API Test with Playwright",
+      "body": "Creating a new post using Playwright API automation suite.",
+      "userId": 1234
+    },
+    "updatePayload": {
+      "title": "Playwright API Test - Updated",
+      "body": "This post content has been updated through automated API testing.",
+      "userId": 1234
+    },
+    "expectedResponse": {
+      "id": 25,
+      "title": "Playwright API Test - Updated",
+      "body": "This post content has been updated through automated API testing.",
+      "userId": 1234
+    }
+  }
