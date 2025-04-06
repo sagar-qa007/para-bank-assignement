@@ -1,0 +1,12 @@
+{
+    "city": "Los Angeles",
+    "firstName": "john",
+    "lastName": "doe",
+    "password": "securePass123",
+    "phoneNumber": "310-987-6543",
+    "ssn": "987-65-4321",
+    "state": "CA",
+    "street": "456 Sunset Blvd",
+    "username": "john_doe_91",
+    "zipCode": "90001"
+}

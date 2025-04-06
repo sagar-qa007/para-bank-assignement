@@ -1,0 +1,11 @@
+{
+    "amount": "750",
+    "payeeAccountNumber": "789456123",
+    "payeeCity": "Springfield",
+    "payeeName": "John Doe",
+    "payeePhoneNumber": "9876543210",
+    "payeeState": "CA",
+    "payeeStreet": "456 Elm Street",
+    "payeeZipCode": "90210",
+    "verifyAccount": "789456123"
+  }

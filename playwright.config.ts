@@ -12,6 +12,6 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     baseURL: 'https://parabank.parasoft.com',
-    trace: 'on-first-retry'
+    trace: 'on'
   }
 });

@@ -1,0 +1,8 @@
+{
+    "accountoverview": "Account Opened!",
+    "message": "*Balance includes deposits that may be subject to holds",
+    "requestLoan": "Loan Request Processed",
+    "successMessageBills": "Bill Payment Complete",
+    "transferFunds": "Transfer Complete!",
+    "updateProfile": "Profile Updated"
+}
