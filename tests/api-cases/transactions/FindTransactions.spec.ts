@@ -5,7 +5,7 @@ import {
   getTransactionAccounts,
   fundTransfer,
   findTransactionByAmount,
-} from "../../../Pages/ApiLib";
+} from "../../../pages/ApisLib";
 
 test("💸 Search for fund transfer transaction by amount", async ({
   browser,
