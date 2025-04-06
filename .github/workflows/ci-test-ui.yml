@@ -33,7 +33,7 @@ jobs:
       - name: Run Playwright tests
         run: |
           echo "Running tests from path: ${{ github.event.inputs.testPath }}"
-          npx playwright test "${{ github.event.inputs.testPath }}"
+          npx playwright test ${{ github.event.inputs.testPath }}
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
