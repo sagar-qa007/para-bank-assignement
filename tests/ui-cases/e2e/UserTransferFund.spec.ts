@@ -1,11 +1,11 @@
 import { expect, test } from "@playwright/test";
-import { LoginLib } from "../../../Pages/LoginLib";
-import { RegisterLib } from "../../../Pages/RegisterLib";
-import { HomePageLib } from "../../../Pages/HomePageLib";
-import { OpenAccountLib } from "../../../Pages/OpenAccountLib";
-import { AccountsOverviewLib } from "../../../Pages/AccountsOverviewLib";
-import { TransferFundsLib } from "../../../Pages/TransferFundsLib";
-import { BillPayLib } from "../../../Pages/BillPayLib";
+import { LoginLib } from "../../../pages/LoginLib";
+import { RegisterLib } from "../../../pages/RegisterLib";
+import { HomePageLib } from "../../../pages/HomePageLib";
+import { OpenAccountLib } from "../../../pages/OpenAccountLib";
+import { AccountsOverviewLib } from "../../../pages/AccountsOverviewLib";
+import { TransferFundsLib } from "../../../pages/TransferFundsLib";
+import { BillPayLib } from "../../../pages/BillPayLib";
 import readJsonFile from "../../../Utils";
 
 const generateRandomUsername = (): string =>
